@@ -1,0 +1,468 @@
+:root{
+    --color-hover-red:#861a1a;
+    --color-hover-blue:#1c3c6d;
+}
+body{
+    color: var(--color-hover-blue);
+}
+.navbar{
+    background-color: #fffaf4 !important;
+}
+
+
+
+main{
+    background-color: #fffaf4;
+}
+
+.nav-link{
+    color:var(--color-hover-blue) !important;
+    font-weight: 650;
+    margin-left: 5px;
+}
+
+.nav-link:hover{
+    color: var(--color-hover-red) !important;
+}
+
+.bg-teste {
+    background-color: var(--color-hover-red);
+    width: 100%;
+    min-height: 70vh;
+}
+
+.bg-color {
+    width: 100%;
+    min-height: 10vh;
+}
+
+.bg-main{
+     background-color: #fffaf4;
+      width: 100%;
+      min-height: 80vh;
+      
+}
+
+
+
+.transparent-background {
+    background: rgba(0, 0, 0, 0.5); /* Altere o último valor (0.5) para ajustar a transparência. */
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.btn-login{
+    margin-left: 1rem;
+    border: solid 1px;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: var(--color-hover-blue); /* Cor de fundo do botão */
+    color: #fff !important; /* Cor do texto do botão */
+    transition: background-color 0.9s ease !important; /* Transição suave da cor de fundo */
+}
+
+.btn-logout{
+  margin-left: 1rem;
+  border: solid 1px;
+  padding: 6px;
+  border-radius: 12px;
+  background-color: var(--color-hover-red); /* Cor de fundo do botão */
+  color: #fff !important; /* Cor do texto do botão */
+  transition: background-color 0.9s ease !important; /* Transição suave da cor de fundo */
+}
+
+.btn-logout:hover {
+  background-color: #ffffff; /* Nova cor de fundo no hover */
+  color: var(--color-hover-red)  !important;
+  border: solid 1px;
+  border-color: var(--color-hover-red) ;
+  
+}
+
+ .bordere {
+  border: solid 2px var(--color-hover-blue) !important;
+  padding: 5px;
+  border-radius: 360px;
+
+}
+
+.bordere:hover {
+  border: solid 2px var(--color-hover-red) !important;
+  transition: 0.5s;
+}
+
+
+
+.btn-login:hover {
+    background-color: #ffffff; /* Nova cor de fundo no hover */
+    color: var(--color-hover-red)  !important;
+    border: solid 1px;
+    border-color: var(--color-hover-red) ;
+    
+}
+
+.button{
+    text-decoration: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 13px;
+    background-color: var(--color-hover-blue); /* Cor de fundo do botão */
+    color: #fff !important; /* Cor do texto do botão */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    user-select: none;
+}
+
+
+.button:hover {
+    background-color: var(--color-hover-red); /* Nova cor de fundo no hover */
+    color: #fff  !important;
+    cursor: pointer;
+    
+}
+
+video{
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+
+.linha-branca {
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+    .linha-preta {
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-hover-blue);
+    }
+
+
+.titulo-sobreposto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: var(--color-hover-red);
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    .titulo-sobreposto-preto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--color-hover-blue);
+      background-color: #fffaf4;
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+
+
+/* -- Incio De card----*/
+
+.carde {
+      text-align: center;
+      background-color: transparent;
+      color: white;
+      border: solid 2px;
+      padding: 10px;
+      margin-left: 30px;
+      border-radius: 12px;
+    }
+
+    .carde:hover {
+      transform: scale(1.1);
+      transition: .3s;
+    }
+
+    .carde:not(:hover) {
+    transform: scale(1); /* Reverte a transformação quando o mouse sai */
+   transition: .3s;
+   }
+
+    .card-icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card-rating {
+      display: flex;
+      justify-content: center;
+    }
+
+    .star {
+      color: #f0c419;
+      font-size: 18px;
+      margin-left: 3px;
+    }
+
+    .not-star{
+      color: #3d3100;
+      font-size: 18px;
+      margin-left: 3px;
+    }
+
+    .mid-star {
+      background: linear-gradient(to right, #f0c419 50%, #3d3100 50%); /* Gradiente horizontal para a metade da estrela */
+      -webkit-background-clip: text; /* Aplica o gradiente apenas na área de texto (compatibilidade com navegadores baseados em WebKit) */
+      color: transparent; /* Torna o ícone da estrela transparente */
+      font-size: 18px;
+      margin-left: 3px;
+  }
+    .card-subtitle {
+        margin-top: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+
+    .depoimento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            border: solid #1c3c6d;
+            background-color: #97bdf54a;
+            border-radius: 5px;
+            min-height: 400px;
+            box-shadow: 6px 6px #1c3c6d84;
+        }
+
+        /* Estilos da foto do usuário */
+        .foto-usuario {
+            width: 100px;
+            height: 100px;
+            border: solid 2px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+     
+      
+        .nome-usuario{
+          font-weight: 700;
+          
+        }
+
+
+::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    
+    border-radius: 6px; /* Borda arredondada */
+    background-color: #1c3c6d;
+}
+::-webkit-scrollbar-track {
+    background-color: #add3ff; /* Cor da faixa (track) da barra de rolagem */
+}
+
+/* Adicione uma regra de mídia para telas com largura máxima de 767px (tamanhos de celular) */
+
+
+.btn-sugestao{
+  background-color: var(--color-hover-blue);
+  transition: background-color 0.5s ease !important; 
+  color: #fffaf4;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+
+.btn-sugestao:hover{
+  background-color: #ffffff; /* Nova cor de fundo no hover */
+  color: var(--color-hover-blue) ;
+  border-color: var(--color-hover-blue) ;
+}
+
+.btn-satisfacao{
+  background-color: var(--color-hover-red);
+  transition: background-color 0.5s ease !important; 
+  color: #fffaf4;
+  border-radius: 10px;
+  font-weight: 500;
+  
+}
+
+.btn-satisfacao:hover{
+  background-color: #ffffff; /* Nova cor de fundo no hover */
+  color: var(--color-hover-red) !important;
+  border-color:var(--color-hover-red) ;
+}
+
+.modal.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal.fade.show {
+  opacity: 1;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translate(0);
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, -50px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* estilo estrelas*/
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #6f00ff;
+  transition: color 0.3s;
+}
+
+
+
+
+/* Adiciona uma borda inferior a todas as divs com a classe "mb-3" */
+.mb-3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px; /* Espaçamento inferior para separar o conteúdo */
+  margin-bottom: 20px; /* Espaçamento inferior para separar as divs */
+}
+
+/* Remove a borda inferior da última div com a classe "mb-3" */
+.mb-3:last-child {
+  border-bottom: none;
+  margin-bottom: 0; /* Você pode ajustar isso conforme necessário */
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: yellow;
+  transition: color 0.3s;
+}
+
+.footer {
+            background-color: var(--color-hover-blue);
+            color: #fff; /* Cor do texto branco */
+            padding: 20px 0;
+        }
+
+        /* Detalhes em vermelho */
+        .footer a {
+          color: #fff;
+            
+        }
+        .footer img{
+          border-radius: 20px;
+          border: solid 3px var(--color-hover-red);
+        }
+        .footer .titulo-sobreposto h3{
+          border-radius: 20px;
+          border: solid 3px var(--color-hover-blue);
+        }
+        .footer h3{
+          background-color: var(--color-hover-blue);
+        }
+        
+        .col-form-label {
+          font-size: 20px;
+        }
+        
+        .modal-bod p {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 767px) {
+            
+            
+              .btn-login{
+               margin: 0;
+               margin-right: 600px;
+              }
+
+              .btn-logout{
+                margin: 0;
+                margin-right: 600px;
+              }
+
+             
+                main{  text-align: center;
+                    
+                }
+            
+                video{
+                    width: 98%;
+                    height: 100%;
+                }
+            
+               .carde {
+                 margin: 0;
+                  text-align: center;
+                  background-color: transparent;
+                  color: white;
+                  border: solid 2px;
+                  padding: 10px;
+                  border-radius: 12px;
+                }
+
+                .bordere {
+                  margin: 0;
+                  margin-right: 600px;
+                }
+            }

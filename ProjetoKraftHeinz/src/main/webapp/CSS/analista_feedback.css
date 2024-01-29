@@ -1,0 +1,137 @@
+body{
+  background-color: #f2f2f2 !important;
+}
+
+
+
+
+
+ .id {
+            font-size: 14px; /* Tamanho da fonte da citação */
+            font-style: italic; /* Estilo de fonte itálico para a citação */
+            color: #555; /* Cor do texto da citação */
+        }
+
+
+        
+      
+        
+
+
+        /* Estilo CSS para os botões de rádio na seção de filtro */
+        .filtro input[type="radio"] {
+            display: none; /* Oculta os botões de rádio padrão */
+        }
+
+        .filtro label {
+            display: inline-block;
+            margin-right: 10px; /* Espaço entre os botões de rádio e os rótulos */
+            cursor: pointer;
+            position: relative;
+            padding-left: 25px; /* Espaço para o visual do botão de rádio personalizado */
+        }
+
+        /* Estilo para a marcação (bolinha) dos botões de rádio personalizados */
+        .filtro label::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 16px; /* Altura da marcação do botão de rádio personalizado */
+            width: 16px; /* Largura da marcação do botão de rádio personalizado */
+            border-radius: 50%; /* Para criar um círculo */
+            border: 2px solid #2196F3; /* Cor da borda do botão de rádio (padrão) */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra ao redor da bolinha */
+            transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+        }
+
+        /* Estilo para o botão de rádio quando marcado */
+        .filtro input[type="radio"]:checked + label::before {
+            background-color: rgba(18, 187, 249, 0.418); /* Nova cor de seleção */
+        }
+/* Estilizando a seção de filtro */
+
+
+.filtro {
+  border: solid 2px #33333337;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.237); 
+  border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .filtro h1 {
+
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  .form-group label {
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+ .btn-primary{
+  background-color: #0063b5 !important;
+  border: #0063b5 !important;
+  transition: 0.5s !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+ }
+
+ .btn-primary:hover{
+  background-color: rgb(134, 0, 0) !important;
+  border: rgb(134, 0, 0) !important;
+ }
+  
+  /* Estilizando as avaliações */
+  .avaliacoes {
+    padding: 20px;
+   
+  }
+  
+  .avaliacoes h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .avaliacao {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .nome {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1px;
+  }
+  
+  .texto-avaliacao p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Estilizando feedbacks de Satisfação */
+  #satisfacao {
+    display: none; /* Inicialmente, esconde os feedbacks de Satisfação */
+  }
+  
