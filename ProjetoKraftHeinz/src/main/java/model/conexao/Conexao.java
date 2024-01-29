@@ -6,8 +6,8 @@ import java.sql.SQLException;
 public class Conexao {
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-	private String username = "rm94003";
-	private String password = "060304";
+	private String username = "";
+	private String password = "";
 	private Connection connection;
 	
 	public Connection conectar() {
